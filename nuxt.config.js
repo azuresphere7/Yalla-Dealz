@@ -8,7 +8,7 @@ export default {
   },
   plugins: [
     { src: '~/plugins/vue2-google-maps', mode: 'client' },
-    { src: '~/plugins/vuelidate', mode: 'client'  },
+    { src: '~/plugins/vuelidate', mode: 'client' },
     { src: '~/plugins/CKEditor', mode: 'client' },
     { src: '~/plugins/VueExcelXlsx', mode: 'client' },
     { src: '~/plugins/vuetify-datetime-picker', mode: 'client' },
@@ -34,7 +34,7 @@ export default {
     ],
 
     script: [
-      {src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAtVRigDzJCRcry3xmqwsATJgu-CGKISjA&libraries=places&v=weekly"}
+      { src: "https://maps.googleapis.com/maps/api/js?key=process.env.GOOGLE_API" }
     ]
   },
   typescript: {
@@ -123,7 +123,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend (config, ctx) {
+    extend(config, ctx) {
 
     }
   },
