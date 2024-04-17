@@ -1,0 +1,11 @@
+html, body {
+  margin: 0;
+  width: 100vw;
+  background-color: #fafafa;
+}
+
+/*# sourceMappingURL=main-style.css.map */
+
+.ck.ck-editor__editable_inline {
+  border: 1px solid #9e9e9e !important;
+}
